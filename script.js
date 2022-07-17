@@ -2,8 +2,6 @@ function  playOnClick(alpha){
     const sound = document.querySelector('.sound'+alpha);
     sound.currentTime = 0;
     playAudio(sound);
-    L.classList.add('playing');
-    L.classList.remove('playing');
 }
 function playAudio(x) {
     x.play();
