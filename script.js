@@ -1,3 +1,4 @@
+
 function  playOnClick(alpha){
     const sound = document.querySelector('.sound'+alpha);
     sound.currentTime = 0;
@@ -81,4 +82,10 @@ L.addEventListener("click",function (e){
     playOnClick("L");
     L.classList.add('playing');
     L.forEach(L =>L.addEventListener('transitionend',removeTransition));
+});
+const M = document.querySelector('.M');
+M.addEventListener("click",function (e){
+    playOnClick("M");
+    M.classList.add('playing');
+    M.forEach(M =>M.addEventListener('transitionend',removeTransition));
 });
