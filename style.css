@@ -34,12 +34,13 @@ h1{
 
 .container{
     position: relative;
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
 /*flex wrapper for drum buttons*/
 .keys{
+    margin: 0 5px;
     height:85vh;
     display: flex;
     flex-direction: row;
